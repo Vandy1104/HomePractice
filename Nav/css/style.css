@@ -1,0 +1,63 @@
+/*css Reset*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+body{
+	border: 2px solid black;
+}
+
+
+ul{
+	margin: 30px 10px;
+	padding: 30px 30px;
+	list-style: none;
+	float: right;
+	background: linear-gradient(90deg, rgba(9,121,110,0.5354516806722689) 35%, rgba(0,212,255,1) 100%);;
+
+}
+
+ul::after{
+	clear: right;
+}
+
+nav{
+	display: block;
+}
+
+ul li{
+	display: inline;
+	width: 100%;
+	margin: 20px;
+	height: 30px;
+	padding-top: 5px;
+
+}
+.myicon{
+	display: none;
+}
+
+@media only screen and (max-width: 576px){
+	nav{
+		display: none;
+	}
+	ul li{
+		display: block;
+	}
+	.myicon{
+		float: right;
+		margin:10;
+		color: blue;
+		display: block;
+		position: fixed;
+		font-size: 30px;
+		top: 8px;
+		right: 10px;
+		
+
+
+	}
+}
